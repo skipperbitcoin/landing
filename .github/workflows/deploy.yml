@@ -41,7 +41,7 @@ jobs:
         uses: actions/configure-pages@v3
 
       - name: Build Middleman
-        run: bundle exec middleman build --build-dir="${{ steps.pages.outputs.base_path }}"
+        run: bundle exec middleman build --build-dir="./_site"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
