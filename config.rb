@@ -45,7 +45,7 @@ page '/*.txt', layout: false
 #   activate :minify_javascript
 # end
 
-# configure :build do # needed without custom domain
-#    set :http_prefix, "/landing"
-# end
+configure :build do # needed without custom domain
+   set :http_prefix, "/landing"
+end
 
