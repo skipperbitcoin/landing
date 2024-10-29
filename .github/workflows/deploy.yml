@@ -44,7 +44,7 @@ jobs:
         run: bundle exec middleman build --build-dir="./_site"
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
 
   deploy:
     environment:
